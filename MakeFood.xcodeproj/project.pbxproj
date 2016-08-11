@@ -1305,6 +1305,8 @@
 		7548D6081D59C8D700DE419C /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
 		7548D6181D59CA0900DE419C /* NetWorkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkHelper.h; sourceTree = "<group>"; };
 		7548D6191D59CA0900DE419C /* NetWorkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkHelper.m; sourceTree = "<group>"; };
+		75EB85AC1D5C8432009B8160 /* MakeFoodPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeFoodPrefixHeader.pch; sourceTree = "<group>"; };
+		75EB85AD1D5C849B009B8160 /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
 		75FEECD91D5C5CB900D04DE9 /* QYSmllScroll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYSmllScroll.h; sourceTree = "<group>"; };
 		75FEECDA1D5C5CB900D04DE9 /* QYSmllScroll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYSmllScroll.m; sourceTree = "<group>"; };
 		75FEECDC1D5C673500D04DE9 /* BaseTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTabViewController.h; sourceTree = "<group>"; };
@@ -2529,6 +2531,8 @@
 		7548D5981D59B3B900DE419C /* MakeFood */ = {
 			isa = PBXGroup;
 			children = (
+				75EB85AC1D5C8432009B8160 /* MakeFoodPrefixHeader.pch */,
+				75EB85AD1D5C849B009B8160 /* Define.h */,
 				7548D59C1D59B3BA00DE419C /* AppDelegate.h */,
 				7548D59D1D59B3BA00DE419C /* AppDelegate.m */,
 				7548D59F1D59B3BA00DE419C /* ViewController.h */,
@@ -5278,6 +5282,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MakeFood/MakeFoodPrefixHeader.pch";
 				INFOPLIST_FILE = MakeFood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zengjia.MakeFood;
@@ -5290,6 +5296,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MakeFood/MakeFoodPrefixHeader.pch";
 				INFOPLIST_FILE = MakeFood/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zengjia.MakeFood;

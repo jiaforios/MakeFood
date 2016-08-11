@@ -18,6 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    
     [[NetWorkHelper shareNetManger] postDataWithUrlString:@"http://app.yetang.com/v2/advert/AdvertList" withPara:nil withDataBlock:^(id obj) {
         
         
