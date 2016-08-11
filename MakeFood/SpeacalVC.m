@@ -7,7 +7,7 @@
 //
 
 #import "SpeacalVC.h"
-
+#import "QYSmllScroll.h"
 @interface SpeacalVC ()
 
 @end
@@ -17,7 +17,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+//    self.edgesForExtendedLayout = UIRectEdgeNone;
+        
+    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo_mizhe"]];
     
+    
+    NSArray *titles = @[@"上新",@"女装",@"鞋包",@"居家",@"美妆",@"美食",@"母婴童装",@"昨日热卖",@"下期预告"];
+    QYSmllScroll *sliderBar = [[QYSmllScroll alloc] initWithSmllScroll:titles];
+    sliderBar.changeIndexValue = ^(NSInteger index){
+    
+        NSLog(@"index = %d",index);
+    };
+
+    [self.view addSubview:sliderBar];
+
 }
 
 

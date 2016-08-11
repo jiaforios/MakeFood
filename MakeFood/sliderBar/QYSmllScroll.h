@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface QYSmllScroll : UIScrollView<UIScrollViewDelegate>
+
 -(instancetype)initWithSmllScroll:(NSArray *)arrays;
 @property (nonatomic) NSInteger index;
 @property (nonatomic, strong) void (^changeIndexValue)(NSInteger);

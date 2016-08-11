@@ -12,13 +12,17 @@
 @property (nonatomic,strong)NSMutableArray *buttonArr;
 @property (nonatomic, strong) UIView *slideView;//滑动的视图
 @property (nonatomic,strong)NSArray *stringLengthArr;
+@property(nonatomic,strong)NSArray *arrsss;
+
 @end
 @implementation QYSmllScroll
+
 -(instancetype)initWithSmllScroll:(NSArray *)arrays{
     if (self = [super init]) {
         self.showsHorizontalScrollIndicator = NO;
         self.showsVerticalScrollIndicator = NO;
-        self.frame = CGRectMake(0, 0, scrollWidth, 30);
+        self.frame = CGRectMake(0, 63, scrollWidth, 30);
+        _arrsss = arrays;
         _stringLengthArr =  [self getButtonLengthFrom:arrays];
        __block CGFloat totalvalue = 0;
         [_stringLengthArr enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -26,18 +30,33 @@
         }];
         self.contentSize = CGSizeMake(totalvalue, 30);
         self.backgroundColor = [UIColor whiteColor];
+        self.layer.borderWidth = 0.5;
+        self.layer.borderColor = [[UIColor lightGrayColor] colorWithAlphaComponent:0.7].CGColor;
+
+    }
+    
+    return self;
+}
+
+
+- (void)layoutSubviews
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        
         [self createSlideView];
         NSMutableArray *arr = [NSMutableArray array];
         CGFloat beforeBtnx = 0;
-        for (int i = 0; i < arrays.count; i++) {
+        for (int i = 0; i < _arrsss.count; i++) {
             UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
             btn.frame = CGRectMake(beforeBtnx, 0, [_stringLengthArr[i] floatValue], 30);
-            [self addSubview:btn];
-            [btn setTitle:arrays[i] forState:UIControlStateNormal];
+            [btn setTitle:_arrsss[i] forState:UIControlStateNormal];
             btn.titleLabel.font = [UIFont systemFontOfSize:15];
             [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
             [btn setTitleColor:[UIColor redColor] forState:UIControlStateSelected];
             [btn addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
+            [self addSubview:btn];
+            
             btn.tag = i +100;
             [arr addObject:btn];
             beforeBtnx = CGRectGetMaxX(btn.frame);
@@ -45,12 +64,9 @@
         }
         self.buttonArr = arr;
         self.index = 0;
+    });
 
-    }
-    
-    return self;
 }
-
 
 - (NSArray *)getButtonLengthFrom:(NSArray *)arr
 {
@@ -61,7 +77,6 @@
         NSString *str = (NSString *)obj;
         CGSize realSize = [str boundingRectWithSize:CGSizeMake(1000, 30) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:15]} context:nil].size;
         CGFloat strlength = realSize.width;
-        NSLog(@"strlegth = %f",strlength);
         [marr addObject:@(strlength + 20)];
         
     }];

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "BaseTabViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,8 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    sleep(1);
-    // Override point for customization after application launch.
+    sleep(2);
+
+    BaseTabViewController *tab = [[BaseTabViewController alloc] init];
+    _window.rootViewController = tab;
+    
     return YES;
 }
 
