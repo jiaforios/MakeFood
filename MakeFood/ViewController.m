@@ -17,17 +17,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-//    
-//    [[NetWorkHelper shareNetManger] getDataWithUrlString:@"" withPara:nil withDataBlock:^(id obj) {
-//        
-//        
-//    }];
     
     [[NetWorkHelper shareNetManger] postDataWithUrlString:@"http://app.yetang.com/v2/advert/AdvertList" withPara:nil withDataBlock:^(id obj) {
         
         
     }];
+    
     
 }
 
