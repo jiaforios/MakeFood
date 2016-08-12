@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "quikeHeader.h"
 #import "NetWorkHelper.h"
 @interface ViewController ()
 

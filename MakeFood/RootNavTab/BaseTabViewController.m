@@ -8,7 +8,7 @@
 
 #import "BaseTabViewController.h"
 #import "BaseNavViewController.h"
-#import "SpeacalVC.h"
+#import "SpeacalViewController.h"
 @interface BaseTabViewController ()
 
 @end
@@ -27,7 +27,7 @@
 
 - (NSArray *)creatViewcControllers
 {
-    NSArray *Vcarr = @[@"SpeacalVC",@"SpeacalVC",@"SpeacalVC",@"SpeacalVC",@"SpeacalVC"];
+    NSArray *Vcarr = @[@"SpeacalViewController",@"SpeacalViewController",@"SpeacalViewController",@"SpeacalViewController",@"SpeacalViewController"];
     NSMutableArray *arrs = [NSMutableArray new];
     for (int i = 0; i<Vcarr.count; i++) {
         Class obj = NSClassFromString(Vcarr[i]);
