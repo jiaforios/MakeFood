@@ -9,6 +9,7 @@
 #import "Base_slider_tabvVC.h"
 #import "QYSmllScroll.h"
 #import "SpecalHeadView.h"
+#import "Just_imgeCell.h"
 #define Base_tabv_tag 1000
 #define StartPlace 94
 @interface Base_slider_tabvVC ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
@@ -65,6 +66,7 @@
     tabview.dataSource = self;
     tabview.delegate = self;
     tabview.tag = place;
+    [tabview registerNib:[UINib nibWithNibName:@"Just_imgeCell" bundle:nil] forCellReuseIdentifier:@"cell"];
     switch (place - Base_tabv_tag) {
         case 0:
         {
@@ -102,15 +104,12 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 200.f;
+    return 250.f;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-    }
+    Just_imgeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
     return cell;
 }
