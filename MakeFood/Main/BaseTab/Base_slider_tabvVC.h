@@ -12,6 +12,7 @@ typedef NS_ENUM(NSUInteger, CellKIND)
 {
     CELL_KIND_SPECAL,
     CELL_KIND_NINENINE,
+    CELL_KIND_PINTUAN,
 };
 
 /**

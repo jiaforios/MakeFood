@@ -12,6 +12,7 @@
 #import "Just_imgeCell.h"
 #import "Image_labelHeadView.h"
 #import "NineNineCell.h"
+#import "PinTuanCell.h"
 #define Base_tabv_tag 1000
 @interface Base_slider_tabvVC ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 
@@ -81,6 +82,10 @@
         [tabview registerNib:[UINib nibWithNibName:@"NineNineCell" bundle:nil] forCellReuseIdentifier:@"cell"];
     }
 
+    if (_cellKind == CELL_KIND_PINTUAN) {
+        [tabview registerNib:[UINib nibWithNibName:@"PinTuanCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+
+    }
 
     return tabview;
 }
@@ -103,7 +108,8 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (_cellKind == CELL_KIND_NINENINE) return 150.f;
-    if (_cellKind == CELL_KIND_SPECAL) return 250.f;
+    if (_cellKind == CELL_KIND_SPECAL)   return 250.f;
+    if (_cellKind == CELL_KIND_PINTUAN)  return 240;
     return 0;
 }
 

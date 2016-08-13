@@ -18,7 +18,7 @@
     self.urlStr = @"";
     self.sliderDataArray =  @[@"上新",@"生鲜",@"食品",@"居家",@"美妆",@"母婴",@"服饰",@"下期预告"];
     self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"ic_pintuan_logo.png"]];
-    self.cellKind = CELL_KIND_NINENINE;
+    self.cellKind = CELL_KIND_PINTUAN;
     [super viewDidLoad];
 }
 
