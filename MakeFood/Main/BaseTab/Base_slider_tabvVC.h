@@ -7,7 +7,12 @@
 //
 
 #import "BaseViewController.h"
-#import "Base_Just_image_TabVC.h"
+
+typedef NS_ENUM(NSUInteger, CellKIND)
+{
+    CELL_KIND_SPECAL,
+    CELL_KIND_NINENINE,
+};
 
 /**
  *  this vc is a kind vc of sliderBar and tabview
@@ -27,6 +32,6 @@
 /**
  *  kind of tabv
  */
-@property(nonatomic, assign)TABVHEADKIND tabKind;
+@property(nonatomic, assign)CellKIND cellKind;
 
 @end

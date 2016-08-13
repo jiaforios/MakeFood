@@ -10,8 +10,9 @@
 #import "QYSmllScroll.h"
 #import "SpecalHeadView.h"
 #import "Just_imgeCell.h"
+#import "Image_labelHeadView.h"
+#import "NineNineCell.h"
 #define Base_tabv_tag 1000
-#define StartPlace 94
 @interface Base_slider_tabvVC ()<UITableViewDelegate,UITableViewDataSource,UIScrollViewDelegate>
 
 @property(nonatomic,strong)UIScrollView *scrollview;
@@ -25,7 +26,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    
+     self.automaticallyAdjustsScrollViewInsets = NO;
     [self makeSliderBar];
     [self makeScrollView];
 
@@ -47,10 +48,10 @@
 
 - (void)makeScrollView
 {
-    _scrollview = [[UIScrollView alloc] initWithFrame:CGRectMake(0, StartPlace, SCREEN_WIDTH, SCREEN_HEIGH-StartPlace -49)];
+    _scrollview = [[UIScrollView alloc] initWithFrame:CGRectMake(0, viewStatPlace, SCREEN_WIDTH, SCREEN_HEIGH-viewStatPlace -49)];
     for (int i = 0; i<_sliderDataArray.count; i++) {
 
-        UITableView *tabv =[self makeTabviewWithPlace:Base_tabv_tag + i withFrame:CGRectMake(i*SCREEN_WIDTH, 0, SCREEN_WIDTH, SCREEN_HEIGH-StartPlace)];
+        UITableView *tabv =[self makeTabviewWithPlace:Base_tabv_tag + i withFrame:CGRectMake(i*SCREEN_WIDTH, 0, SCREEN_WIDTH, SCREEN_HEIGH-viewStatPlace)];
         [_scrollview addSubview:tabv];
     }
     _scrollview.pagingEnabled = YES;
@@ -66,27 +67,20 @@
     tabview.dataSource = self;
     tabview.delegate = self;
     tabview.tag = place;
-    [tabview registerNib:[UINib nibWithNibName:@"Just_imgeCell" bundle:nil] forCellReuseIdentifier:@"cell"];
-    switch (place - Base_tabv_tag) {
-        case 0:
-        {
-            [self makeSpecalHeadViewWith:tabview];
-
+    if (_cellKind == CELL_KIND_SPECAL) {
+        [tabview registerNib:[UINib nibWithNibName:@"Just_imgeCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+        switch (place - Base_tabv_tag) {
+            case 0:[self makeSpecalHeadViewWith:tabview];break;
+            case 2:
+            case 4: [self makeImage_labelHeadViewWith:tabview];break;
+            default:
+                break;
         }
-            break;
-        case 1:
-        {
-        }
-            break;
-        case 2:
-        {
-            
-        }
-            break;
-        default:
-            break;
     }
-    
+    if (_cellKind == CELL_KIND_NINENINE) {
+        [tabview registerNib:[UINib nibWithNibName:@"NineNineCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+    }
+
 
     return tabview;
 }
@@ -95,8 +89,12 @@
     SpecalHeadView *specalView = [[SpecalHeadView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 390)];
     tabv.tableHeaderView = specalView;
 }
-
-
+-(void)makeImage_labelHeadViewWith:(UITableView *)tabv
+{
+    Image_labelHeadView *ilView = [[Image_labelHeadView alloc] initWithFrame:CGRectMake(0, viewStatPlace, SCREEN_WIDTH, 100)];
+    tabv.tableHeaderView = ilView;
+    
+}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -104,13 +102,14 @@
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return 250.f;
+    if (_cellKind == CELL_KIND_NINENINE) return 150.f;
+    if (_cellKind == CELL_KIND_SPECAL) return 250.f;
+    return 0;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    Just_imgeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     return cell;
 }
 

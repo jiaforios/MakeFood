@@ -7,7 +7,7 @@
 //
 
 #import "SpecalHeadView.h"
-#import "NJBannerView.h"
+#import "WYScrollView.h"
 #define FiveView_subView_count 5
 #define Base_five_btn_Tag 1000
 #define Base_four_btn_Tag 2000
@@ -16,7 +16,7 @@
 #define Four_high 140
 
 @interface SpecalHeadView ()
-@property(nonatomic,strong)NJBannerView *loopView;
+@property(nonatomic,strong)WYScrollView *loopView;
 @property(nonatomic,strong)UIView *fiveViews;
 @property(nonatomic,strong)UIView *fourViews;
 
@@ -75,24 +75,21 @@
     
 }
 
-- (NJBannerView *)loopView
+- (WYScrollView *)loopView
 {
     if (_loopView == nil) {
         
-        _loopView = [[NJBannerView alloc] initWithFrame:CGRectZero];
-        _loopView.datas = [NSMutableArray arrayWithObjects:
-                         @{@"img":@"http://p700.oschina.io/b/01.png",@"link":@"banner1"},
-                         @{@"img":@"http://p700.oschina.io/b/02.png",@"link":@"banner2"},
-                         @{@"img":@"http://p700.oschina.io/b/03.png",@"link":@"banner3"},
-                         @{@"img":@"http://p700.oschina.io/b/04.png",@"link":@"banner4"},
-                         nil];
         
-        _loopView.linkAction = ^(NSString *link)
-        {
-            NSLog(@"link = %@ ",link);
+        NSArray *arr2 = @[@"http://hiphotos.baidu.com/praisejesus/pic/item/e8df7df89fac869eb68f316d.jpg", @"http://pic39.nipic.com/20140226/18071023_162553457000_2.jpg", @"http://file27.mafengwo.net/M00/B2/12/wKgB6lO0ahWAMhL8AAV1yBFJDJw20.jpeg"];
+        _loopView = [WYScrollView scrollViewWithImageArray:arr2 describeArray:nil];
+        _loopView.pagePosition = PositionBottomRight;
+        _loopView.imageClickBlock = ^(NSInteger index){
+            NSLog(@"indec = %d",index);
         };
         
     }
+    
+    
     return _loopView;
 }
 

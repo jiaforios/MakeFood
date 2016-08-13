@@ -1,25 +1,25 @@
 //
-//  SpeacalViewController.m
+//  NineNineViewController.m
 //  MakeFood
 //
-//  Created by foscom on 16/8/12.
+//  Created by foscom on 16/8/13.
 //  Copyright © 2016年 zengjia. All rights reserved.
 //
 
-#import "SpeacalViewController.h"
+#import "NineNineViewController.h"
 
-@interface SpeacalViewController ()
+@interface NineNineViewController ()
 
 @end
 
-@implementation SpeacalViewController
+@implementation NineNineViewController
 
 - (void)viewDidLoad {
-    
+    // Do any additional setup after loading the view.
     self.urlStr = @"";
-    self.sliderDataArray =  @[@"上新",@"女装",@"鞋包",@"居家",@"美妆",@"美食",@"母婴童装",@"昨日热卖",@"下期预告"];
-
-    self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"logo_mizhe.png"]];
+    self.sliderDataArray =  @[@"精选",@"9.9包邮",@"29.9包邮",@"最后疯抢"];
+    self.title = @"9.9包邮";
+    self.cellKind = CELL_KIND_NINENINE;
     [super viewDidLoad];
 
 }

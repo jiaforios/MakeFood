@@ -12,5 +12,6 @@
 
 -(instancetype)initWithSmllScroll:(NSArray *)arrays;
 @property (nonatomic) NSInteger index;
+-(void)makeSliderBarView;
 @property (nonatomic, strong) void (^changeIndexValue)(NSInteger);
 @end

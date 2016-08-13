@@ -16,8 +16,6 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    sleep(2);
-
     BaseTabViewController *tab = [[BaseTabViewController alloc] init];
     _window.rootViewController = tab;
     
