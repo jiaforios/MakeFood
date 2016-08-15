@@ -46,7 +46,23 @@
     _navView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, 64)];
     _navView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"my_bg.png"]];
     _navView.alpha = 0;
+    UIButton *btn = [self makeRightSetView];
+    [_navView addSubview:btn];
+    
+    [btn mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(_navView.mas_right).with.offset(-10);
+        make.width.mas_equalTo(@30);
+        make.height.mas_equalTo(@30);
+        make.bottom.equalTo(_navView.mas_bottom).with.offset(-7);
+    }];
     [self.view addSubview:_navView];
+}
+
+- (UIButton *)makeRightSetView
+{
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setImage:[UIImage imageNamed:@"ic_my_set.png"] forState:UIControlStateNormal];
+    return btn;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
@@ -87,7 +103,8 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     }
       cell.imageView.image = [UIImage imageNamed:@"ic_my_all_orders.png"];
-      cell.textLabel.text = _dataSource[indexPath.section][indexPath.row];
+       cell.textLabel.text = _dataSource[indexPath.section][indexPath.row];
+       cell.textLabel.font = [UIFont systemFontOfSize:15];
     return cell;
 }
 

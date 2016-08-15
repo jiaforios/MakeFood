@@ -84,7 +84,6 @@
         _loopView = [WYScrollView scrollViewWithImageArray:arr2 describeArray:nil];
         _loopView.pagePosition = PositionBottomRight;
         _loopView.imageClickBlock = ^(NSInteger index){
-            NSLog(@"indec = %d",index);
         };
         
     }
