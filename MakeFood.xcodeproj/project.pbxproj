@@ -84,6 +84,10 @@
 		751DC3861D5D7DC400100DF8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 751DC3781D5D7DC400100DF8 /* NSLayoutConstraint+MASDebugAdditions.m */; };
 		751DC3871D5D7DC400100DF8 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 751DC37A1D5D7DC400100DF8 /* View+MASAdditions.m */; };
 		751DC3881D5D7DC400100DF8 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 751DC37D1D5D7DC400100DF8 /* ViewController+MASAdditions.m */; };
+		753412BB1D61906B000EF003 /* ShopCarVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 753412B91D61906B000EF003 /* ShopCarVC.m */; };
+		753412BC1D61906B000EF003 /* ShopCarVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 753412BA1D61906B000EF003 /* ShopCarVC.xib */; };
+		753412CB1D61AA7B000EF003 /* CALayer+UIcolor.m in Sources */ = {isa = PBXBuildFile; fileRef = 753412CA1D61AA7B000EF003 /* CALayer+UIcolor.m */; };
+		753412D31D61B40F000EF003 /* MineVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 753412D21D61B40F000EF003 /* MineVC.m */; };
 		7548D59B1D59B3BA00DE419C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7548D59A1D59B3BA00DE419C /* main.m */; };
 		7548D59E1D59B3BA00DE419C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7548D59D1D59B3BA00DE419C /* AppDelegate.m */; };
 		7548D5A11D59B3BA00DE419C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7548D5A01D59B3BA00DE419C /* ViewController.m */; };
@@ -1432,6 +1436,13 @@
 		751DC37B1D5D7DC400100DF8 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		751DC37C1D5D7DC400100DF8 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
 		751DC37D1D5D7DC400100DF8 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		753412B81D61906B000EF003 /* ShopCarVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShopCarVC.h; sourceTree = "<group>"; };
+		753412B91D61906B000EF003 /* ShopCarVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShopCarVC.m; sourceTree = "<group>"; };
+		753412BA1D61906B000EF003 /* ShopCarVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShopCarVC.xib; sourceTree = "<group>"; };
+		753412C91D61AA7B000EF003 /* CALayer+UIcolor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+UIcolor.h"; sourceTree = "<group>"; };
+		753412CA1D61AA7B000EF003 /* CALayer+UIcolor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+UIcolor.m"; sourceTree = "<group>"; };
+		753412D11D61B40F000EF003 /* MineVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineVC.h; sourceTree = "<group>"; };
+		753412D21D61B40F000EF003 /* MineVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineVC.m; sourceTree = "<group>"; };
 		7548D5961D59B3B900DE419C /* MakeFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MakeFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7548D59A1D59B3BA00DE419C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7548D59C1D59B3BA00DE419C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -2745,6 +2756,8 @@
 		751DC2AD1D5D714A00100DF8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				753412CC1D61B3A3000EF003 /* Mine */,
+				753412B31D619043000EF003 /* ShopCar */,
 				750C52BF1D5DBB0600FDAC0F /* BaseTab */,
 				751A21CA1D5F142000905EDB /* PinTuan */,
 				751A21BD1D5EB68800905EDB /* 9.9 */,
@@ -2771,6 +2784,8 @@
 				751DC2BC1D5D72FD00100DF8 /* UIButton+tartgetBlock.m */,
 				751DC2BD1D5D72FD00100DF8 /* UIView+GestureActionBlock.h */,
 				751DC2BE1D5D72FD00100DF8 /* UIView+GestureActionBlock.m */,
+				753412C91D61AA7B000EF003 /* CALayer+UIcolor.h */,
+				753412CA1D61AA7B000EF003 /* CALayer+UIcolor.m */,
 			);
 			path = Categorys;
 			sourceTree = "<group>";
@@ -3020,6 +3035,89 @@
 			);
 			name = NJBannerView;
 			path = ../Main/Specal/Views/NJBannerView;
+			sourceTree = "<group>";
+		};
+		753412B31D619043000EF003 /* ShopCar */ = {
+			isa = PBXGroup;
+			children = (
+				753412B41D619043000EF003 /* Model */,
+				753412B51D619043000EF003 /* VC */,
+				753412B61D619043000EF003 /* ViewModel */,
+				753412B71D619043000EF003 /* Views */,
+			);
+			path = ShopCar;
+			sourceTree = "<group>";
+		};
+		753412B41D619043000EF003 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		753412B51D619043000EF003 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				753412B81D61906B000EF003 /* ShopCarVC.h */,
+				753412B91D61906B000EF003 /* ShopCarVC.m */,
+				753412BA1D61906B000EF003 /* ShopCarVC.xib */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		753412B61D619043000EF003 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		753412B71D619043000EF003 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		753412CC1D61B3A3000EF003 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				753412CD1D61B3A3000EF003 /* Model */,
+				753412CE1D61B3A3000EF003 /* VC */,
+				753412CF1D61B3A3000EF003 /* ViewModel */,
+				753412D01D61B3A3000EF003 /* Views */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		753412CD1D61B3A3000EF003 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		753412CE1D61B3A3000EF003 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				753412D11D61B40F000EF003 /* MineVC.h */,
+				753412D21D61B40F000EF003 /* MineVC.m */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		753412CF1D61B3A3000EF003 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		753412D01D61B3A3000EF003 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		7548D58D1D59B3B800DE419C = {
@@ -5368,6 +5466,7 @@
 				75FEF5561D5C7E7000D04DE9 /* ic_my_history@3x.png in Resources */,
 				75FEF3141D5C7E7000D04DE9 /* ic_label_jiantou@2x.png in Resources */,
 				75FEF2C41D5C7E7000D04DE9 /* ic_cart_arrow_gray@2x.png in Resources */,
+				753412BC1D61906B000EF003 /* ShopCarVC.xib in Resources */,
 				75FEF38F1D5C7E7000D04DE9 /* ic_share_copy@2x.png in Resources */,
 				75FEF5581D5C7E7000D04DE9 /* ic_my_qiang@3x.png in Resources */,
 				75FEF3341D5C7E7000D04DE9 /* ic_my_record@2x.png in Resources */,
@@ -5586,6 +5685,7 @@
 				751DC3401D5D72FE00100DF8 /* NSObject+MJCoding.m in Sources */,
 				751DC3881D5D7DC400100DF8 /* ViewController+MASAdditions.m in Sources */,
 				7548D5A11D59B3BA00DE419C /* ViewController.m in Sources */,
+				753412CB1D61AA7B000EF003 /* CALayer+UIcolor.m in Sources */,
 				751DC33B1D5D72FE00100DF8 /* MJFoundation.m in Sources */,
 				751DC3251D5D72FE00100DF8 /* UIButton+tartgetBlock.m in Sources */,
 				751DC3281D5D72FE00100DF8 /* NetWorkHelper.m in Sources */,
@@ -5609,8 +5709,10 @@
 				751DC35F1D5D743D00100DF8 /* SpecalHeadView.m in Sources */,
 				751DC3301D5D72FE00100DF8 /* AFAutoPurgingImageCache.m in Sources */,
 				750C52CB1D5DC01200FDAC0F /* Base_slider_tabvVC.m in Sources */,
+				753412D31D61B40F000EF003 /* MineVC.m in Sources */,
 				751DC3371D5D72FE00100DF8 /* UIRefreshControl+AFNetworking.m in Sources */,
 				751A21E21D5F203800905EDB /* PinTuanCell.m in Sources */,
+				753412BB1D61906B000EF003 /* ShopCarVC.m in Sources */,
 				751DC33F1D5D72FE00100DF8 /* NSObject+MJClass.m in Sources */,
 				751DC3861D5D7DC400100DF8 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				751DC37F1D5D7DC400100DF8 /* MASCompositeConstraint.m in Sources */,

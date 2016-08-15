@@ -11,6 +11,8 @@
 #import "SpeacalViewController.h"
 #import "NineNineViewController.h"
 #import "PinTuanTableVC.h"
+#import "ShopCarVC.h"
+#import "MineVC.h"
 @interface BaseTabViewController ()
 
 @end
@@ -29,7 +31,7 @@
 
 - (NSArray *)creatViewcControllers
 {
-    NSArray *Vcarr = @[@"SpeacalViewController",@"NineNineViewController",@"PinTuanTableVC",@"SpeacalViewController",@"SpeacalViewController"];
+    NSArray *Vcarr = @[@"SpeacalViewController",@"NineNineViewController",@"PinTuanTableVC",@"ShopCarVC",@"MineVC"];
     NSMutableArray *arrs = [NSMutableArray new];
     for (int i = 0; i<Vcarr.count; i++) {
         Class obj = NSClassFromString(Vcarr[i]);
