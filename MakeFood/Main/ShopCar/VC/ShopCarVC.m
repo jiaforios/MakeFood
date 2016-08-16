@@ -7,7 +7,6 @@
 //
 
 #import "ShopCarVC.h"
-
 @interface ShopCarVC ()
 
 @end
@@ -16,7 +15,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    
     self.title = @"购物车";
     self.navigationController.navigationBar.titleTextAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:17],NSForegroundColorAttributeName:[UIColor blackColor]};
 }

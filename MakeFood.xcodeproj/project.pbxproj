@@ -94,6 +94,12 @@
 		7548D5A41D59B3BA00DE419C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7548D5A21D59B3BA00DE419C /* Main.storyboard */; };
 		7548D5A61D59B3BA00DE419C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7548D5A51D59B3BA00DE419C /* Assets.xcassets */; };
 		7548D5A91D59B3BA00DE419C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7548D5A71D59B3BA00DE419C /* LaunchScreen.storyboard */; };
+		75FED7131D62A0070020D401 /* MineHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FED7121D62A0070020D401 /* MineHeadView.m */; };
+		75FED7151D62A0160020D401 /* MineHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75FED7141D62A0160020D401 /* MineHeadView.xib */; };
+		75FED7181D62EBEB0020D401 /* ImageTextButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FED7171D62EBEB0020D401 /* ImageTextButton.m */; };
+		75FED71B1D62F4BD0020D401 /* LogInVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FED71A1D62F4BD0020D401 /* LogInVC.m */; };
+		75FED7281D63125B0020D401 /* LoginFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FED7271D63125B0020D401 /* LoginFootView.m */; };
+		75FED72E1D631A870020D401 /* LoginFootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75FED72D1D631A870020D401 /* LoginFootView.xib */; };
 		75FEF18C1D5C7E7000D04DE9 /* app_share_pic.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FEECE91D5C7E6C00D04DE9 /* app_share_pic.png */; };
 		75FEF18D1D5C7E7000D04DE9 /* AppIcon29x29.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FEECEA1D5C7E6C00D04DE9 /* AppIcon29x29.png */; };
 		75FEF18E1D5C7E7000D04DE9 /* AppIcon29x29@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FEECEB1D5C7E6C00D04DE9 /* AppIcon29x29@2x~ipad.png */; };
@@ -1455,6 +1461,16 @@
 		7548D5AA1D59B3BA00DE419C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75EB85AC1D5C8432009B8160 /* MakeFoodPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MakeFoodPrefixHeader.pch; sourceTree = "<group>"; };
 		75EB85AD1D5C849B009B8160 /* Define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Define.h; sourceTree = "<group>"; };
+		75FED7111D62A0070020D401 /* MineHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineHeadView.h; sourceTree = "<group>"; };
+		75FED7121D62A0070020D401 /* MineHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineHeadView.m; sourceTree = "<group>"; };
+		75FED7141D62A0160020D401 /* MineHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MineHeadView.xib; sourceTree = "<group>"; };
+		75FED7161D62EBEB0020D401 /* ImageTextButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTextButton.h; sourceTree = "<group>"; };
+		75FED7171D62EBEB0020D401 /* ImageTextButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTextButton.m; sourceTree = "<group>"; };
+		75FED7191D62F4BD0020D401 /* LogInVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogInVC.h; sourceTree = "<group>"; };
+		75FED71A1D62F4BD0020D401 /* LogInVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogInVC.m; sourceTree = "<group>"; };
+		75FED7261D63125B0020D401 /* LoginFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginFootView.h; path = Mine/Views/LoginFootView.h; sourceTree = "<group>"; };
+		75FED7271D63125B0020D401 /* LoginFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginFootView.m; path = Mine/Views/LoginFootView.m; sourceTree = "<group>"; };
+		75FED72D1D631A870020D401 /* LoginFootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginFootView.xib; sourceTree = "<group>"; };
 		75FEECE91D5C7E6C00D04DE9 /* app_share_pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_share_pic.png; sourceTree = "<group>"; };
 		75FEECEA1D5C7E6C00D04DE9 /* AppIcon29x29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon29x29.png; sourceTree = "<group>"; };
 		75FEECEB1D5C7E6C00D04DE9 /* AppIcon29x29@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon29x29@2x~ipad.png"; sourceTree = "<group>"; };
@@ -2756,9 +2772,14 @@
 		751DC2AD1D5D714A00100DF8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				75FED7191D62F4BD0020D401 /* LogInVC.h */,
+				75FED71A1D62F4BD0020D401 /* LogInVC.m */,
+				75FED7261D63125B0020D401 /* LoginFootView.h */,
+				75FED7271D63125B0020D401 /* LoginFootView.m */,
+				75FED72D1D631A870020D401 /* LoginFootView.xib */,
+				750C52BF1D5DBB0600FDAC0F /* BaseTab */,
 				753412CC1D61B3A3000EF003 /* Mine */,
 				753412B31D619043000EF003 /* ShopCar */,
-				750C52BF1D5DBB0600FDAC0F /* BaseTab */,
 				751A21CA1D5F142000905EDB /* PinTuan */,
 				751A21BD1D5EB68800905EDB /* 9.9 */,
 				751DC3541D5D736C00100DF8 /* Specal */,
@@ -3116,6 +3137,11 @@
 		753412D01D61B3A3000EF003 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				75FED7161D62EBEB0020D401 /* ImageTextButton.h */,
+				75FED7171D62EBEB0020D401 /* ImageTextButton.m */,
+				75FED7111D62A0070020D401 /* MineHeadView.h */,
+				75FED7121D62A0070020D401 /* MineHeadView.m */,
+				75FED7141D62A0160020D401 /* MineHeadView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -5100,6 +5126,7 @@
 				75FEF4131D5C7E7000D04DE9 /* img_label_haiwaigou@2x.png in Resources */,
 				75FEF25B1D5C7E7000D04DE9 /* btn_close@2x.png in Resources */,
 				75FEF1921D5C7E7000D04DE9 /* AppIcon57x57.png in Resources */,
+				75FED7151D62A0160020D401 /* MineHeadView.xib in Resources */,
 				75FEF3E21D5C7E7000D04DE9 /* img_add@2x.png in Resources */,
 				75FEF4CD1D5C7E7000D04DE9 /* btn_nav_category_selected@3x.png in Resources */,
 				75FEF2D21D5C7E7000D04DE9 /* ic_collection_red@2x.png in Resources */,
@@ -5171,6 +5198,7 @@
 				75FEF56B1D5C7E7000D04DE9 /* ic_overseas_time@3x.png in Resources */,
 				75FEF4911D5C7E7000D04DE9 /* shake_close@2x.png in Resources */,
 				75FEF5331D5C7E7000D04DE9 /* ic_fight_fill@3x.png in Resources */,
+				75FED72E1D631A870020D401 /* LoginFootView.xib in Resources */,
 				75FEF4EC1D5C7E7000D04DE9 /* ic_arrow-@3x.png in Resources */,
 				75FEF2BB1D5C7E7000D04DE9 /* ic_brand_new@2x.png in Resources */,
 				75FEF1B41D5C7E7000D04DE9 /* default_loading_640-300.png in Resources */,
@@ -5673,6 +5701,8 @@
 				751DC3831D5D7DC400100DF8 /* MASViewAttribute.m in Sources */,
 				751DC2B91D5D714A00100DF8 /* BaseTabViewController.m in Sources */,
 				751DC33C1D5D72FE00100DF8 /* MJProperty.m in Sources */,
+				75FED7131D62A0070020D401 /* MineHeadView.m in Sources */,
+				75FED7281D63125B0020D401 /* LoginFootView.m in Sources */,
 				750C52D51D5DD13C00FDAC0F /* Just_imgeCell.m in Sources */,
 				751DC34E1D5D72FE00100DF8 /* UIImage+GIF.m in Sources */,
 				751A21C41D5EB6A300905EDB /* NineNineViewController.m in Sources */,
@@ -5687,6 +5717,7 @@
 				7548D5A11D59B3BA00DE419C /* ViewController.m in Sources */,
 				753412CB1D61AA7B000EF003 /* CALayer+UIcolor.m in Sources */,
 				751DC33B1D5D72FE00100DF8 /* MJFoundation.m in Sources */,
+				75FED7181D62EBEB0020D401 /* ImageTextButton.m in Sources */,
 				751DC3251D5D72FE00100DF8 /* UIButton+tartgetBlock.m in Sources */,
 				751DC3281D5D72FE00100DF8 /* NetWorkHelper.m in Sources */,
 				751DC3311D5D72FE00100DF8 /* AFImageDownloader.m in Sources */,
@@ -5694,6 +5725,7 @@
 				750C52C81D5DBFF200FDAC0F /* BaseViewController.m in Sources */,
 				751DC3411D5D72FE00100DF8 /* NSObject+MJKeyValue.m in Sources */,
 				751DC2B81D5D714A00100DF8 /* BaseNavViewController.m in Sources */,
+				75FED71B1D62F4BD0020D401 /* LogInVC.m in Sources */,
 				751DC3521D5D72FE00100DF8 /* UIImageView+WebCache.m in Sources */,
 				750C52D11D5DC88600FDAC0F /* SpeacalViewController.m in Sources */,
 				751DC3821D5D7DC400100DF8 /* MASLayoutConstraint.m in Sources */,

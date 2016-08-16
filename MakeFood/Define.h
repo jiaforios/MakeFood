@@ -5,6 +5,11 @@
 //  Created by foscom on 16/8/11.
 //  Copyright © 2016年 zengjia. All rights reserved.
 //
+//    layer.borderWidth
+//    layer.borderColor
+//    layer.masksToBounds
+//    layer.cornerRadius
+//    layer.borderColorWithUIColor
 
 #ifndef Define_h
 #define Define_h

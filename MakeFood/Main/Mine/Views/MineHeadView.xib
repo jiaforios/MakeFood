@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MineHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1PN-df-ogM">
+                    <rect key="frame" x="0.0" y="150" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQ8-jW-XPO" customClass="ImageTextButton">
+                            <rect key="frame" x="14" y="9" width="70" height="32"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <state key="normal" title="收藏商品" image="btn_nav_home.png"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wag-1Y-lnN" customClass="ImageTextButton">
+                            <rect key="frame" x="202" y="8" width="98" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <state key="normal" title="浏览记录" image="btn_nav_home.png"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4s-5c-huU" customClass="ImageTextButton">
+                            <rect key="frame" x="109" y="9" width="98" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <state key="normal" title="收藏品牌" image="btn_nav_mine.png"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeF-hd-uzQ" customClass="ImageTextButton">
+                            <rect key="frame" x="299" y="8" width="98" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <state key="normal" title="我的签到" image="btn_nav_mine.png"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="0.21880278716216217" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="esR-kf-dfq"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jth-7j-jvO">
+                    <rect key="frame" x="69" y="70" width="78" height="30"/>
+                    <color key="backgroundColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="0.0" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="qw2-Yn-vQa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="登录"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="2"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorWithUIColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="toLogInVCAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="pDB-Na-DsW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soV-iY-pvk">
+                    <rect key="frame" x="228" y="70" width="78" height="30"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="注册"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="1"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="2"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorWithUIColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="toRegisteVC:" destination="iN0-l3-epB" eventType="touchUpInside" id="L9j-TC-0MZ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="soV-iY-pvk" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="70" id="0v3-FR-rv2"/>
+                <constraint firstItem="Jth-7j-jvO" firstAttribute="height" secondItem="soV-iY-pvk" secondAttribute="height" id="53J-Dd-GIN"/>
+                <constraint firstAttribute="bottom" secondItem="1PN-df-ogM" secondAttribute="bottom" id="EdA-Wi-DNj"/>
+                <constraint firstAttribute="trailing" secondItem="1PN-df-ogM" secondAttribute="trailing" id="Iqd-W5-NrX"/>
+                <constraint firstItem="Jth-7j-jvO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="69" id="KBJ-6U-Trl"/>
+                <constraint firstItem="Jth-7j-jvO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="70" id="LF0-0B-ApS"/>
+                <constraint firstAttribute="trailing" secondItem="soV-iY-pvk" secondAttribute="trailing" constant="69" id="Nio-jz-Icd"/>
+                <constraint firstItem="soV-iY-pvk" firstAttribute="leading" secondItem="Jth-7j-jvO" secondAttribute="trailing" constant="81" id="SYa-AA-neC"/>
+                <constraint firstItem="Jth-7j-jvO" firstAttribute="width" secondItem="soV-iY-pvk" secondAttribute="width" id="WqO-qC-aQo"/>
+                <constraint firstItem="1PN-df-ogM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hT6-e4-sFP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="65.5" y="232"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_nav_home.png" width="60" height="30"/>
+        <image name="btn_nav_mine.png" width="60" height="30"/>
+    </resources>
+</document>
