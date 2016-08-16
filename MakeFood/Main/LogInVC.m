@@ -27,6 +27,7 @@
     [self.view addSubview:self.passWordTF];
     [self.view addSubview:self.loginBtn];
     [self makeFootView];
+    
     [self.useNameTF mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view.mas_left).with.offset(10);
         make.right.equalTo(self.view.mas_right).with.offset(-10);
@@ -104,7 +105,6 @@
     
 }
 
-
 - (UITextField*)useNameTF
 {
     if (_useNameTF == nil) {
@@ -123,8 +123,6 @@
         _passWordTF.placeholder = @"密码";
         _passWordTF.borderStyle = UITextBorderStyleRoundedRect;
         [_passWordTF setValue:[UIFont systemFontOfSize:14] forKeyPath:@"_placeholderLabel.font"];
-
-
     }
     return _passWordTF;
 }
@@ -135,8 +133,8 @@
         _loginBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_loginBtn setTitle:@"登录" forState:UIControlStateNormal];
         _loginBtn.backgroundColor = BaseBackgroundColor;
+        _loginBtn.layer.cornerRadius = 5;
     }
-    
     return _loginBtn;
 }
 

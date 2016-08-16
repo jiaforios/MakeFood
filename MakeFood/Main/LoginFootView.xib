@@ -17,26 +17,38 @@
                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLe-jt-kss">
+                <button opaque="NO" tag="100" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hLe-jt-kss">
                     <rect key="frame" x="23" y="74" width="59" height="50"/>
                     <state key="normal" title="Button" image="ic_signin_wechat.png"/>
+                    <connections>
+                        <action selector="wechatAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="4bx-O4-YlA"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2MI-t4-Q9w">
+                <button opaque="NO" tag="103" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2MI-t4-Q9w">
                     <rect key="frame" x="292" y="74" width="59" height="50"/>
                     <state key="normal" title="Button" image="ic_signin_sina.png"/>
+                    <connections>
+                        <action selector="wechatAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="VU6-xN-D1R"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eF-7y-eAT">
+                <button opaque="NO" tag="101" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eF-7y-eAT">
                     <rect key="frame" x="113" y="74" width="59" height="50"/>
                     <state key="normal" title="Button" image="ic_signin_taobao.png"/>
+                    <connections>
+                        <action selector="wechatAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="kqv-3h-Q5Q"/>
+                    </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9c-Ep-STX">
+                <button opaque="NO" tag="102" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9c-Ep-STX">
                     <rect key="frame" x="197" y="74" width="59" height="50"/>
                     <state key="normal" title="Button" image="ic_signin_qq.png"/>
+                    <connections>
+                        <action selector="wechatAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="p7t-H1-4LM"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="180.5" y="473"/>
+            <point key="canvasLocation" x="348.5" y="376"/>
         </view>
     </objects>
     <resources>
